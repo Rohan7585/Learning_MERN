@@ -23,8 +23,8 @@ const App = () => {
   }, [apiKey]);
 
   return (
-    <div className="App p-4">
-      <h1 className="text-4xl font-bold mb-4">Top Headlines</h1>
+    <div>
+      <h1>Top Headlines</h1>
       {loading ? <p>Loading...</p> : <NewsList news={news} />}
     </div>
   );
